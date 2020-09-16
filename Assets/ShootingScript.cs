@@ -11,9 +11,7 @@ public class ShootingScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            Instantiate(bullet);
-            
-        ;
+            Instantiate(bullet,new Vector2(0,2),transform.rotation);
             
     }
 }
